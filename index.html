@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who am I?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: #001f3f;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .nav a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #00599b;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .tabcontent img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #Home {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#" onclick="openTab(event, 'Home')">Home</a>
+        <a href="#" onclick="openTab(event, 'About')">About</a>
+        <a href="#" onclick="openTab(event, 'Achievements')">Achievements</a>
+        <a href="#" onclick="openTab(event, 'Socials')">Socials</a>
+    </div>
+
+    <div id="Home" class="tabcontent">
+        <h1>WELCOME!</h1>
+        <p>This website is all about Ms. Aaliyah Felicity J. Sanchez. <br> <br> To know more about her, you can click the <br> about button above.</p>
+        <img src="iyah.jpg" alt="Your Picture" width="300" height="200">
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h2>About</h2>
+        <p>Aaliyah Felicity Jasmin Sanchez, is a 20-year-old, 2nd year Computer Science Student at Pamantasan ng Lungsod ng Muntinlupa.  <br>
+            <br>
+        Was born on September 21, 2002, at Las Pinas City. She has been living at Las Pinas City for 20 years since she was born. <br>She lives at P. Mapa street, DBP Village, Almanza Dos, Las Pinas City. <br> <br>
+    Her parents are Juliet J. Sanchez, 45 years of age, a Overseas Filipino Worker at Kuwait and Paul Hernand M. Sanchez, 45 years of age, a Systems Administrator at Cantier. <br>
+        She has 2 siblings, next to her is Aamir Felipe Sanchez, 14 years old, a Grade 9 student and Aairah Franchesca J. Sanchez, her youngest sibling, 9 years old, a Grade 4 student.</p> <hr> 
+        <p> In preschool, she studied at Teacher Aida's Learning Center. <br> <br>In primary school, she studied at the following schools: STI Academy, Blessed Trinity School, and Almanza Elementary School. <br> <br>
+        For Junior High School, she studied at Las Pinas City National High School - Almanza. <br> <br>  For Senior High School, she took up Technical Vocational Livelihood - Information and Communications Technology at 
+            Las Pinas City National Senior High School - Dona Josefa Campus. <br> <br> As of the moment, she is a 2nd year student, taking up Bachelor of Science in Computer Science at Pamantasan ng Lungsod ng Muntinlupa.     </p>  
+            <hr>
+            <p> 5 years from now, she said that she sees herself as a successful woman on her chosen career. </p>
+    </div>
+
+    <div id="Achievements" class="tabcontent">
+        <h2>Achievements</h2>
+        <hr>
+        <h3> PRESCHOOL: </h3> 
+        <p> 1st Honorable Mention <br> 
+        Loyalty Award </p>
+        <hr>
+        <h3> ELEMENTARY </h3> 
+        <p> Grade 1: 2nd Honorable Mention <br> 
+        Speed Typing Contest Champion </p>
+        <p> Grade 2: Blue Card Awardee (4 CONSISTENT QUARTERS) <br> <br>
+            Grade 3 - 6: Rank 1 </p>
+            <hr>
+        <h3> JUNIOR HIGH SCHOOL: </h3> 
+        <p> With Honors (Grade 7-10) <br> 
+        Perfect Attendance Awardee (Grade 7-10)<br>
+        Journalist <br>
+        2nd placer - ICT Quiz Bee (2018) <br>
+        Champion - ICT Quiz Bee (2019) </p>
+        <hr>
+        <h3> SENIOR HIGH SCHOOL: </h3> 
+        <p> Graduated With High Honors (RANK 4 OVERALL BATCH) <br> 
+        Grade 11 Supreme Student Government - TVL Representative<br>
+        Grade 12 Supreme Student Government - President <br>
+        Division Federatioon Supreme Student Government - Vice President <br>
+        Senior High School Level Representative of Las Pinas at An Engagement Cum Conversation with Sec. Liling. <br>
+        Head of the EduTikTok program and got featured by Commission on Human Rights - NCR. 
+        <hr>
+        <h3> COLLEGE (PRESENT): </h3> 
+        <p> 1st and 2nd year - Class President <br> 
+        Former 1st year Representative at PLMUN - BSCS Society <br>
+        Former Business Manager at PLMUN - BSCS Society <br>
+     </p>
+    </div>
+
+    <div id="Socials" class="tabcontent">
+        <h2>Socials</h2>
+        <hr>
+        <p>Check out Ms. Felicity's social media accounts for daily updates!</p>
+        <hr>
+        <a href="https://www.facebook.com/felicityxsanchez/">Facebook - Click here</a> <br> <br>
+        <hr>
+        <a href="https://instagram.com/feliciqt?igshid=MzMyNGUyNmU2YQ==">Instagram - Click here</a> <br><br>
+        <hr>
+        <a href="https://www.youtube.com/@felicitysanchez">Youtube - Click here</a> <br> <br>
+        <hr>
+        <a href="https://www.tiktok.com/@feliciqt?_t=8fPERu0hymF&_r=1">Tiktok - Click here</a> <br> <br>
+        <hr>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, navlinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            navlinks = document.getElementsByTagName("a");
+            for (i = 0; i < navlinks.length; i++) {
+                navlinks[i].className = navlinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
